@@ -1,0 +1,44 @@
+@startuml ER-diagram
+
+entity "Customers" as C {
+    * CID : number <<PK>>
+    --
+    * Name : Text
+    * Address : Text
+    * Street : Text
+    * City : Text
+    * State : Text
+    * Country : Text
+    Phone : Number
+}
+
+entity "Orders" as O {
+    *OID : number <<PK>>
+    --
+    * O-Date : Date
+    * O-Total : number
+    * CID : number <<FK>>
+}
+
+entity "Order-Items" as OI {
+    * OID : number <<PK>><<FK>>
+    * Line-ID : number <<PK>>
+    --
+    * QTY : number
+    * PID : number <<FK>>
+}
+
+entity "Products" as P {
+    * PID : number <<PK>>
+    --
+    * P-Name : Text
+    * Price : number
+}
+
+
+
+C ||..o{ O : makes
+O ||-r-|{ OI : consist of
+OI }o.u.|| P : contains
+
+@enduml
