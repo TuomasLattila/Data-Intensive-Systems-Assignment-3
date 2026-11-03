@@ -12,9 +12,9 @@ PlantUML and draw.io were used to generate the diagrams.
 ![ER model](images/ER-diagram.png)
 
 ## Graph database schema
-![ER model](images/Graph-schema.png)
+![Graph model](images/Graph-schema.png)
 
 ## Wide-column schema
-
+![Wide-column model](images/wide-column_schema.png)
 
 ## JSON data representation
