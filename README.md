@@ -18,3 +18,4 @@ PlantUML and draw.io were used to generate the diagrams.
 ![Wide-column model](images/wide-column_schema.png)
 
 ## JSON data representation
+![JSON data representation](images/JSON-representation.png)

@@ -1,0 +1,30 @@
+{
+    "CID": "<id>",
+    "Name": "<name>",
+    "Address": {
+        "Street": "<street>",
+        "City": "<city>",
+        "State": "<state>",
+        "Country": "<country>"
+    },
+    "Phone": "<phone>",
+    "Orders": [
+        {
+            "OID": "<id>",
+            "O-Date": "<date>",
+            "O-Total": "<total>",
+            "Order-Items": [
+                {
+                    "Line-ID": "<id>",
+                    "QTY": "<quantity>",
+                    "Product": {
+                        "PID": "<id>",
+                        "P-Name": "<name>",
+                        "Price": "<price>"
+                    }
+                }
+            ]
+        }
+    ]
+}
+
