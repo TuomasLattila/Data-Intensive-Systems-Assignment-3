@@ -4,12 +4,17 @@ entity "Customers" as C {
     * CID : number <<PK>>
     --
     * Name : Text
-    * Address : Text
+    * Phone : Number
+    * Address : number <<FK>>
+}
+
+entity "Address" as A {
+    * Address-ID : number <<PK>>
+    --
     * Street : Text
     * City : Text
     * State : Text
     * Country : Text
-    Phone : Number
 }
 
 entity "Orders" as O {
@@ -37,6 +42,7 @@ entity "Products" as P {
 
 
 
+A ||--o{ C : has
 C ||..o{ O : makes
 O ||-r-|{ OI : consist of
 OI }o.u.|| P : contains
